@@ -1,0 +1,3 @@
+<component th:fragment="section-blog" xmlns:th="http://www.thymeleaf.org">
+
+</component>
