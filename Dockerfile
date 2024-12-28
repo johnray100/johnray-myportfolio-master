@@ -1,13 +1,13 @@
-# Use a compatible JDK 23 runtime
-FROM bellsoft/liberica-openjdk-debian:23
+# Use a compatible JDK base image
+FROM eclipse-temurin:23-jdk-jammy
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the application JAR file into the container
-COPY target/*.jar /app/myportfolio.jar
+# Copy the JAR file into the container
+COPY target/johnray-myportfolio-master-*.jar /app/myportfolio.jar
 
-# Expose the port your Spring Boot application runs on
+# Expose the port your application uses
 EXPOSE 8080
 
 # Command to run the Spring Boot application
