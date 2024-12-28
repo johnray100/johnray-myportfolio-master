@@ -1,19 +1,3 @@
-# Exported from Render on 2024-12-27T05:36:08Z
-services:
-  - type: web
-    name: johnray-myportfolio-master
-    runtime: docker
-    repo: https://github.com/johnray100/johnray-myportfolio-master
-    plan: free
-    region: singapore
-    dockerContext: .
-    dockerfilePath: ./Dockerfile
-    domains:
-      - johnray100.com
-      - www.johnray100.com
-    previews:
-      generation: automatic
-version: "1"
 
 # Use JDK 23 runtime as the base image
 FROM eclipse-temurin:23-jdk-jammy
@@ -29,3 +13,5 @@ EXPOSE 8080
 
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "myportfolio.jar"]
+
+
