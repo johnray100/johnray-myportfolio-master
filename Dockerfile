@@ -5,7 +5,7 @@ FROM eclipse-temurin:23-jdk-jammy
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/johnray-myportfolio-master-*.jar /app/myportfolio.jar
+COPY target/johnray-myportfolio-master-*.jar /C:/Users/Jay/Downloads/johnray-myportfolio-master/target
 
 # Expose the port your application uses
 EXPOSE 8080
