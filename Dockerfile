@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/johnray-myportfolio-master-0.0.1-SNAPSHOT.jar /app/my-portfolio.jar
 
 # Step 4: I-expose ang port na ginagamit ng iyong app (default Spring Boot port: 8080)
-EXPOSE 8080
+EXPOSE 8081
 
 # Step 5: I-run ang Spring Boot app
 ENTRYPOINT ["java", "-jar", "/app/my-portfolio.jar"]
