@@ -1,0 +1,16 @@
+# Exported from Render on 2024-12-28T11:50:40Z
+services:
+- type: web
+  name: johnray-myportfolio-master
+  runtime: docker
+  repo: https://github.com/johnray100/johnray-myportfolio-master
+  plan: free
+  region: singapore
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+  domains:
+  - www.johnray100.com
+  - johnray100.com
+  previews:
+    generation: automatic
+version: "1"
